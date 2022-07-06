@@ -1,0 +1,173 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 650px;
+    padding: 4rem 6rem;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+.form h1 {
+    font-family: var(--font-family);
+    color: var(--color-black);
+    font-size: 44px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.form p {
+    font-family: var(--font-family);
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+
+    margin: 1rem 0 0.5rem;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+    
+    font-family: var(--font-family);
+    color: var(--color-grey);
+    font-size: 20px;
+    font-weight: 500;
+
+    padding: 1rem 1.5rem;
+}
+
+.form input:focus,
+.form select:focus {
+    outline: 2px solid rgb(165, 165, 165);
+}
+
+.form input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    color: #c0c0c0;
+}
+
+.form__btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+    margin: 2rem 0 1rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.btn-cancel {
+    font-weight: 500;
+    color: #686868;
+    background-color: transparent;
+}
+
+.btn-action {
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: #3B84E5;
+    padding: 1rem 4rem;
+}
+
+.text-alert {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:1400px) {
+    .form {
+        width: 480px;
+        padding: 2rem 4rem;
+    }
+
+    .form h1 {
+        font-size: 32px;
+        margin: 0.75rem 0 0.5rem;
+    }
+
+    .form p {
+        font-size: 18px;
+        margin: 1rem 0 0.25rem;
+    }
+
+    .form input,
+    .form select {
+        font-size: 18px;
+        padding: 0.5rem 1rem;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+    
+    .btn-action {
+        padding: 0.75rem 2rem;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    
+}
+
+@media screen and (max-width:450px) {
+    .form {
+        width: 80vw;
+        padding: 2rem 1.5rem;
+    }
+
+    .form h1 {
+        font-size: 28px;
+        margin: 0.5rem 0;
+    }
+
+    .form p {
+        font-size: 16px;
+        margin: 0.5rem 0 0.2rem;
+    }
+
+    .form input,
+    .form select {
+        font-size: 16px;
+        padding: 0.25rem 1rem;
+    }
+
+    .form__btn-container {
+        margin: 2rem 0 0;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+    
+    .btn-action {
+        padding: 0.5rem 1.5rem;
+    }
+}

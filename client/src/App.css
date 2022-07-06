@@ -1,0 +1,13 @@
+body {
+    background-color: var(--color-bg);
+}
+
+.app {
+    max-width: 1920px;
+}
+
+::placeholder {
+    color: #afafaf;
+}
+
+

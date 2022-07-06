@@ -1,0 +1,44 @@
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-button button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+    
+    padding: 0.5rem 1rem;
+    margin-left: 0.75rem;
+}
+
+.btn-edit {
+    background-color: #3B84E5;
+}
+
+.btn-delete {
+    background-color: #F45150;
+}
+
+@media screen and (max-width:1400px) {
+    .container-button button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .container-button button {
+        font-size: 12px;
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+}
